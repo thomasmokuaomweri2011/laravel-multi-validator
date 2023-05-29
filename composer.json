@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "thomas-omweri/laravel-or-validator",
+    "description": "Validates a field with multiple rules using the OR operator",
     "keywords": [
-        ":vendor_name",
+        "Thomas Omweri",
         "laravel",
-        ":package_slug"
+        "laravel-or-validator"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/thomas-omweri/laravel-or-validator",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Thomas Omweri",
+            "email": "thomas.omweri@gmail.com",
             "role": "Developer"
         }
     ],
@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "ThomasOmweri\\LaravelOrValidator\\": "src/",
+            "ThomasOmweri\\LaravelOrValidator\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/"
+            "ThomasOmweri\\LaravelOrValidator\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -61,10 +61,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "ThomasOmweri\\LaravelOrValidator\\LaravelOrValidatorServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "LaravelOrValidator": "ThomasOmweri\\LaravelOrValidator\\Facades\\LaravelOrValidator"
             }
         }
     },
