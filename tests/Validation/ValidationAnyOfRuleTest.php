@@ -6,9 +6,9 @@ use Illuminate\Container\Container;
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Translation\ArrayLoader;
 use Illuminate\Translation\Translator;
-use LaravelMultiValidator\Rules\AnyOf;
 use Illuminate\Validation\ValidationServiceProvider;
 use Illuminate\Validation\Validator;
+use LaravelMultiValidator\Rules\AnyOf;
 use PHPUnit\Framework\TestCase;
 
 class ValidationAnyOfRuleTest extends TestCase

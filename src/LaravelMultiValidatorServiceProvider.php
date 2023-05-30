@@ -16,7 +16,6 @@ class LaravelMultiValidatorServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-multi-validator')
-            ->hasConfigFile()
-            ->hasViews();
+            ->hasConfigFile();
     }
 }

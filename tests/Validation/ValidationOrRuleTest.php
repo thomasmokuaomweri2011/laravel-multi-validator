@@ -8,8 +8,8 @@ use Illuminate\Translation\ArrayLoader;
 use Illuminate\Translation\Translator;
 use Illuminate\Validation\ValidationServiceProvider;
 use Illuminate\Validation\Validator;
-use PHPUnit\Framework\TestCase;
 use LaravelMultiValidator\Rules\OrRule;
+use PHPUnit\Framework\TestCase;
 
 class ValidationOrRuleTest extends TestCase
 {
