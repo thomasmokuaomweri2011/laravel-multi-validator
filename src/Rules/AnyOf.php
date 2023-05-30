@@ -1,6 +1,6 @@
 <?php
 
-namespace ThomasOmweri\LaravelOrValidator\Rules;
+namespace LaravelMultiValidator\Rules;
 
 use Closure;
 use Illuminate\Contracts\Validation\ValidationRule;
@@ -44,7 +44,7 @@ class AnyOf implements ValidationRule
             }
         }
 
-        if (! $passes) {
+        if (!$passes) {
             $fail($this->message());
         }
     }

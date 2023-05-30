@@ -1,6 +1,6 @@
 <?php
 
-namespace ThomasOmweri\LaravelOrValidator\Tests\Validation;
+namespace LaravelMultiValidator\Tests\Validation;
 
 use Illuminate\Container\Container;
 use Illuminate\Support\Facades\Facade;
@@ -9,7 +9,7 @@ use Illuminate\Translation\Translator;
 use Illuminate\Validation\ValidationServiceProvider;
 use Illuminate\Validation\Validator;
 use PHPUnit\Framework\TestCase;
-use ThomasOmweri\LaravelOrValidator\Rules\OrRule;
+use LaravelMultiValidator\Rules\OrRule;
 
 class ValidationOrRuleTest extends TestCase
 {

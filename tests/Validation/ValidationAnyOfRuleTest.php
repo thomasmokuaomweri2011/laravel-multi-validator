@@ -1,12 +1,12 @@
 <?php
 
-namespace ThomasOmweri\LaravelOrValidator\Tests\Validation;
+namespace LaravelMultiValidator\Tests\Validation;
 
 use Illuminate\Container\Container;
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Translation\ArrayLoader;
 use Illuminate\Translation\Translator;
-use ThomasOmweri\LaravelOrValidator\Rules\AnyOf;
+use LaravelMultiValidator\Rules\AnyOf;
 use Illuminate\Validation\ValidationServiceProvider;
 use Illuminate\Validation\Validator;
 use PHPUnit\Framework\TestCase;

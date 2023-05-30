@@ -1,12 +1,11 @@
 <?php
 
-namespace ThomasOmweri\LaravelOrValidator;
+namespace LaravelMultiValidator;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use ThomasOmweri\LaravelOrValidator\Commands\LaravelOrValidatorCommand;
 
-class LaravelOrValidatorServiceProvider extends PackageServiceProvider
+class LaravelMultiValidatorServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +15,8 @@ class LaravelOrValidatorServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('laravel-or-validator')
+            ->name('laravel-multi-validator')
             ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel-or-validator_table')
-            ->hasCommand(LaravelOrValidatorCommand::class);
+            ->hasViews();
     }
 }

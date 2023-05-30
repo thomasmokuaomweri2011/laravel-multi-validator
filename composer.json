@@ -1,12 +1,12 @@
 {
-    "name": "thomas-omweri/laravel-or-validator",
+    "name": "thomas-omweri/laravel-multi-validator",
     "description": "Validates a field with multiple rules using the OR operator",
     "keywords": [
         "Thomas Omweri",
         "laravel",
-        "laravel-or-validator"
+        "laravel-multi-validator"
     ],
-    "homepage": "https://github.com/thomas-omweri/laravel-or-validator",
+    "homepage": "https://github.com/thomas-omweri/laravel-multi-validator",
     "license": "MIT",
     "authors": [
         {
@@ -36,13 +36,13 @@
     },
     "autoload": {
         "psr-4": {
-            "ThomasOmweri\\LaravelOrValidator\\": "src/",
-            "ThomasOmweri\\LaravelOrValidator\\Database\\Factories\\": "database/factories/"
+            "LaravelMultiValidator\\": "src/",
+            "LaravelMultiValidator\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ThomasOmweri\\LaravelOrValidator\\Tests\\": "tests/"
+            "LaravelMultiValidator\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -62,10 +62,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "ThomasOmweri\\LaravelOrValidator\\LaravelOrValidatorServiceProvider"
+                "LaravelMultiValidator\\LaravelMultiValidatorServiceProvider"
             ],
             "aliases": {
-                "LaravelOrValidator": "ThomasOmweri\\LaravelOrValidator\\Facades\\LaravelOrValidator"
+                "LaravelMultiValidator": "LaravelMultiValidator\\Facades\\LaravelMultiValidator"
             }
         }
     },

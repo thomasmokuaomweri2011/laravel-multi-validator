@@ -1,5 +1,5 @@
 <?php
 
-use ThomasOmweri\LaravelOrValidator\Tests\TestCase;
+use LaravelMultiValidator\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

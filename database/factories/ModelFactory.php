@@ -1,6 +1,6 @@
 <?php
 
-namespace ThomasOmweri\LaravelOrValidator\Database\Factories;
+namespace LaravelMultiValidator\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
