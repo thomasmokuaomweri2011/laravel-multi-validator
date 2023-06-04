@@ -17,6 +17,8 @@ composer require thomas-omweri/laravel-multi-validator
 ```
 
 ## Usage
+//use LaravelMultiValidator\Rules\AnyOf;
+//use LaravelMultiValidator\Rules\OrRule;
 
 ```php
 $validator = Validator::make(
