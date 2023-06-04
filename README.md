@@ -5,15 +5,8 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/thomas-omweri/laravel-multi-validator/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/thomas-omweri/laravel-multi-validator/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/thomas-omweri/laravel-multi-validator.svg?style=flat-square)](https://packagist.org/packages/thomas-omweri/laravel-multi-validator)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+Sometimes you may want to validate a field with multiple rules where at least one of the rules is true.This was not possible until Laravel Multi Validator happened!
 
-## Support us
-
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/laravel-multi-validator.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/laravel-multi-validator)
-
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
-
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
 
 ## Installation
 
@@ -23,37 +16,29 @@ You can install the package via composer:
 composer require thomas-omweri/laravel-multi-validator
 ```
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="laravel-multi-validator-migrations"
-php artisan migrate
-```
-
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="laravel-multi-validator-config"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="laravel-multi-validator-views"
-```
-
 ## Usage
 
 ```php
-$LaravelMultiValidator = new LaravelMultiValidator();
-echo $LaravelMultiValidator->echoPhrase('Hello, ThomasOmweri!');
+$validator = Validator::make(
+    [
+        'name' => 'Thomas Omweri',
+        'contact' => '+2547xxxxxxxx'
+    ],
+     [
+        'name' => [
+            new orRule('starts_with:Thomas', 'ends_with:Omweri'),
+        ],
+        'contact' => [
+            new anyOf(
+                [
+                    'email',
+                    Rule::phone()->country('KE')->mobile(),
+                    Rule::phone()->country('KE')->fixed()
+                ]
+            ),
+        ],
+    ]
+);
 ```
 
 ## Testing
