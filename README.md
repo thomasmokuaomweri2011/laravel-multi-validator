@@ -19,6 +19,9 @@ composer require thomas-omweri/laravel-multi-validator
 ## Usage
 
 ```php
+//use LaravelMultiValidator\Rules\AnyOf;
+//use LaravelMultiValidator\Rules\OrRule;
+
 $validator = Validator::make(
     [
         'name' => 'Thomas Omweri',
