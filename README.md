@@ -5,7 +5,7 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/thomas-omweri/laravel-multi-validator/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/thomas-omweri/laravel-multi-validator/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/thomas-omweri/laravel-multi-validator.svg?style=flat-square)](https://packagist.org/packages/thomas-omweri/laravel-multi-validator)
 
-Sometimes you may want to validate a field with multiple rules where at least one of the rules is true.This was not possible until Laravel Multi Validator happened!
+Sometimes you may want to validate a field with multiple rules where at least one of the rules is true.This was not possible until Laravel Multi Validator by Thomas Omweri happened!
 
 
 ## Installation
@@ -24,7 +24,7 @@ $validator = Validator::make(
         'name' => 'Thomas Omweri',
         'contact' => '+2547xxxxxxxx'
     ],
-     [
+    [
         'name' => [
             new orRule('starts_with:Thomas', 'ends_with:Omweri'),
         ],
